@@ -75,22 +75,30 @@ Visit [http://localhost:5000](http://localhost:5000) in your browser.
 
 ## Project Structure
 
+```
 microblog/
 │
 ├── app/
-│ ├── **microblog**.py
-│ ├── models.py
-│ ├── forms.py
-│ ├── routes.py
-│ └── templates/
-│ ├── base.html
-│ ├── index.html
-│ ├── login.html
-│ └── register.html
+│   ├── __init__.py
+│   ├── models.py
+│   ├── forms.py
+│   ├── routes.py
+│   └── templates/
+│       ├── base.html
+│       ├── index.html
+│       ├── login.html
+│       └── register.html
 ├── migrations/
 ├── microblog.py
 ├── config.py
 └── README.md
+```
+
+- `app/`: Contains the main application code, including models, forms, routes, and templates.
+- `migrations/`: Stores database migration files managed by Alembic.
+- `microblog.py`: The entry point for the Flask application.
+- `config.py`: Configuration settings for the application.
+- `README.md`: Documentation for the project.
 
 ## License
 
