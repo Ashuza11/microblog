@@ -17,3 +17,4 @@ class Config:
     ADMINS = ["ashuzamh@gmail.com"]
 
     POSTS_PER_PAGE = 5
+    LANGUAGES = ["en", "es", "fr"]
