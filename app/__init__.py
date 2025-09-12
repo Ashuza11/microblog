@@ -11,7 +11,8 @@ from flask_login import LoginManager
 
 
 def get_locale():
-    return request.accept_languages.best_match(app.config["LANGUAGES"])
+    # return request.accept_languages.best_match(app.config["LANGUAGES"])
+    return "fr"
 
 
 app = Flask(__name__)

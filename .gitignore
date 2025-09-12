@@ -30,3 +30,6 @@ Thumbs.db
 *.swn
 *.sublime-workspace
 *.sublime-project
+
+# Translations
+messages.pot
