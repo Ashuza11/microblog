@@ -2,6 +2,8 @@
 {% import "bootstrap_wtf.html" as wtf %}
 
 {% block content %}
-    <h1>{{ _('Edit Profile') }}</h1>
-    {{ wtf.quick_form(form) }}
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <h1>{{ _('Edit Profile') }}</h1>
+        {{ wtf.quick_form(form) }}
+    </div>
 {% endblock %}

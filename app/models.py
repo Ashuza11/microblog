@@ -2,7 +2,6 @@ from datetime import datetime, timezone
 from hashlib import md5
 from time import time
 import jwt
-from app import app
 from typing import Optional
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash

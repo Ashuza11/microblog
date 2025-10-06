@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-12 01:08+0100\n"
+"POT-Creation-Date: 2025-09-24 03:35+0100\n"
 "PO-Revision-Date: 2017-09-29 23:25-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -30,7 +30,7 @@ msgstr "Contraseña"
 msgid "Remember Me"
 msgstr "Recordarme"
 
-#: app/forms.py:14 app/templates/login.html:5
+#: app/forms.py:14 app/templates/login.html:8
 msgid "Sign In"
 msgstr "Ingresar"
 
@@ -42,7 +42,7 @@ msgstr "Email"
 msgid "Repeat Password"
 msgstr "Repetir Contraseña"
 
-#: app/forms.py:24 app/templates/register.html:5
+#: app/forms.py:24 app/templates/register.html:8
 msgid "Register"
 msgstr "Registrarse"
 
@@ -70,6 +70,14 @@ msgstr "Enviar"
 msgid "Say something"
 msgstr "Dí algo"
 
+#: app/translate.py:8
+msgid "Error: the translation service is not configured."
+msgstr ""
+
+#: app/translate.py:22
+msgid "Error: the translation service failed."
+msgstr ""
+
 #: app/templates/404.html:4
 msgid "Not Found"
 msgstr "Página No Encontrada"
@@ -90,6 +98,10 @@ msgstr "El administrador ha sido notificado. ¡Lamentamos la inconveniencia!"
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s dijo %(when)s"
+
+#: app/templates/_post.html:24
+msgid "Translate"
+msgstr ""
 
 #: app/templates/base.html:9
 msgid "Welcome to Microblog"
@@ -115,7 +127,7 @@ msgstr "Perfil"
 msgid "Logout"
 msgstr "Salir"
 
-#: app/templates/edit_profile.html:5
+#: app/templates/edit_profile.html:6
 msgid "Edit Profile"
 msgstr "Editar Perfil"
 
@@ -132,19 +144,19 @@ msgstr "Artículos siguientes"
 msgid "Older posts"
 msgstr "Artículos previos"
 
-#: app/templates/login.html:7
+#: app/templates/login.html:10
 msgid "New User?"
 msgstr "¿Usuario Nuevo?"
 
-#: app/templates/login.html:7
+#: app/templates/login.html:10
 msgid "Click to Register!"
 msgstr "¡Haz click aquí para registrarte!"
 
-#: app/templates/login.html:9
+#: app/templates/login.html:12
 msgid "Forgot Your Password?"
 msgstr "¿Te olvidaste tu contraseña?"
 
-#: app/templates/login.html:10
+#: app/templates/login.html:13
 msgid "Click to Reset It"
 msgstr "Haz click aquí para pedir una nueva"
 
@@ -152,7 +164,7 @@ msgstr "Haz click aquí para pedir una nueva"
 msgid "Reset Password"
 msgstr "Nueva Contraseña"
 
-#: app/templates/reset_password_request.html:5
+#: app/templates/reset_password_request.html:8
 msgid "Reset Your Password"
 msgstr "Nueva Contraseña"
 
