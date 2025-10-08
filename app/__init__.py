@@ -1,6 +1,7 @@
 import logging
 from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
+from elasticsearch import Elasticsearch
 from flask import Flask, request, current_app
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -52,11 +53,11 @@ def create_app(config_class=Config):
 
     app.register_blueprint(cli_bp)
 
-    # app.elasticsearch = (
-    #     Elasticsearch([app.config["ELASTICSEARCH_URL"]])
-    #     if app.config["ELASTICSEARCH_URL"]
-    #     else None
-    # )
+    app.elasticsearch = (
+        Elasticsearch([app.config["ELASTICSEARCH_URL"]])
+        if app.config["ELASTICSEARCH_URL"]
+        else None
+    )
 
     if not app.debug and not app.testing:
         if app.config["MAIL_SERVER"]:
